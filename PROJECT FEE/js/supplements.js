@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     orderButtons.forEach(button => {
         button.addEventListener('click', function () {
-            const supplementCard = this.closest('.supplements'); // Updated class selector
+            const supplementCard = this.closest('.supplement-card'); // Updated class selector
             const name = supplementCard.getAttribute('data-name');
             const price = parseInt(supplementCard.getAttribute('data-price'), 10);
             const image = supplementCard.getAttribute('data-image');
